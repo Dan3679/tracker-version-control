@@ -1,6 +1,6 @@
 # Compiler und Flags für modernes C++
 CXX = g++
-CXXFLAGS = -std=c++20 -Wall -Wextra -Isrc
+CXXFLAGS = -std=c++23 -Wall -Wextra -Isrc
 
 # Ordnerstruktur
 SRC_DIR = src
@@ -8,6 +8,11 @@ OBJ_DIR = obj
 
 # Name des fertigen Programms (unter Linux ohne .exe)
 TARGET = tracker-version-control 
+
+# Löschen des vorhandenen 
+#ifneq ("$(wildcard $(TARGET))","")
+#	rm $(TARGET)
+#endif
 
 # Alle Quelldateien im src-Ordner (main.cpp und taschenrechner.cpp)
 SRCS = $(SRC_DIR)/main.cpp # $(SRC_DIR)/taschenrechner.cpp
@@ -20,7 +25,7 @@ OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 all: $(TARGET)
 
 # Linken: Verbindet die .o Dateien zum fertigen Programm
-$(TARGET): $(OBJS)
+$(TARGET): $(OBJS) 
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
 # Kompilieren: Erstellt aus jeder .cpp Datei eine .o Datei
