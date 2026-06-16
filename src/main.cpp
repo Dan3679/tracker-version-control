@@ -7,6 +7,7 @@
 using namespace std;
 
 /**
+ * Deterministic function to convert string to int
  * Not collision resistent - Usable only depending on scope
  *
  * @param string s - The string to be converted
@@ -27,9 +28,7 @@ int convertToInt( string s ) {
  *	Recursively iterate over filesystem entries of current directory
  *	Write names of entries in a file
  */
-void outputFiles() {
-
-	const char* filename = "track";
+void snapshot( const char* filename ) {
 
 	auto entry_length{3UZ};
 
@@ -49,6 +48,36 @@ void outputFiles() {
 	fstream( filename, ios::out | ios::trunc ) << file;
 }
 
+/**
+ *	Compare two filesystem map files
+ *	To-Do : Actually compare, so far it only outputs line by line
+ *	
+ *	@param string baseFile
+ *	@param string compareFile
+ */
+void compare( string baseFile, string compareFile ) {
+	//string baseContent;
+	//fstream( baseFile, ios::in) >> baseContent;
+	//cout << baseContent;
+	string baseFileContent;
+	ifstream BaseFileStream( baseFile );
+	while( getline(BaseFileStream, baseFileContent) ) {
+		// While we are not at the end.
+		cout << baseFileContent;	
+	}
+	BaseFileStream.close();
+}
+
+void init() { snapshot( "track" ); }
+
+
+void status() {
+	snapshot( "current" );
+	compare( "current", "track" );
+}
+
+
+void commit() {}
 
 int main ( int argc, char *argv[] ) {
 		
@@ -62,13 +91,13 @@ int main ( int argc, char *argv[] ) {
 	switch ( value ) {	
 
 		case 436 :
-			outputFiles();
+			init();
 			break;
 		case 676 :
-			outputFiles();
+			status();
 			break;
 		case 649 :
-			outputFiles();
+			commit();
 			break;
 		default:
 			cout << "Argument unknown" << endl;
