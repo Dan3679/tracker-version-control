@@ -3,6 +3,8 @@
 #include <new>
 #include <filesystem>
 #include <fstream>
+#include <list>
+#include <map>
 
 using namespace std;
 
@@ -56,16 +58,43 @@ void snapshot( const char* filename ) {
  *	@param string compareFile
  */
 void compare( string baseFile, string compareFile ) {
-	//string baseContent;
-	//fstream( baseFile, ios::in) >> baseContent;
-	//cout << baseContent;
+
+	// Prepare base file
 	string baseFileContent;
 	ifstream BaseFileStream( baseFile );
-	while( getline(BaseFileStream, baseFileContent) ) {
-		// While we are not at the end.
-		cout << baseFileContent;	
+
+	// Prepare file to compare against
+	string compareFileContent;
+	ifstream CompareFileStream( compareFile );
+
+	list<string> deleted;
+	list<string> added;
+
+	map<string, int> baseMap;
+
+	// Compare Loop
+	while( getline( BaseFileStream, baseFileContent )) {
+		baseMap[baseFileContent];
 	}
+	
 	BaseFileStream.close();
+
+	while( getline( CompareFileStream, compareFileContent )) {
+		if( !baseMap.count( compareFileContent ) )
+			added.push_back( compareFileContent );
+		baseMap[compareFileContent] = 1;
+	}	
+		
+	for (const auto& [file, value] : baseMap) {
+		if( value == 0)
+			deleted.push_back( file );
+	}
+
+	for (const auto& file : added)
+		cout << "New file: " << file << endl;
+
+	for (const auto& file : deleted)
+		cout << "Deleted file: " << file << endl;
 }
 
 void init() { snapshot( "track" ); }
@@ -73,7 +102,7 @@ void init() { snapshot( "track" ); }
 
 void status() {
 	snapshot( "current" );
-	compare( "current", "track" );
+	compare( "track", "current" );
 }
 
 
