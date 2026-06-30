@@ -1,0 +1,113 @@
+./.git
+./.git/branches
+./.git/COMMIT_EDITMSG Size: 167 Time: 2026-06-17 22:15:19.483658100
+./.git/config Size: 291 Time: 2026-06-11 22:37:42.005836500
+./.git/description Size: 73 Time: 2026-06-11 22:11:29.244359600
+./.git/FETCH_HEAD Size: 0 Time: 2026-06-11 22:37:16.396695200
+./.git/HEAD Size: 21 Time: 2026-06-11 22:11:58.797591900
+./.git/hooks
+./.git/hooks/applypatch-msg.sample Size: 478 Time: 2026-06-11 22:11:29.355435400
+./.git/hooks/commit-msg.sample Size: 896 Time: 2026-06-11 22:11:29.370716600
+./.git/hooks/fsmonitor-watchman.sample Size: 4726 Time: 2026-06-11 22:11:29.276939400
+./.git/hooks/post-update.sample Size: 189 Time: 2026-06-11 22:11:29.426589800
+./.git/hooks/pre-applypatch.sample Size: 424 Time: 2026-06-11 22:11:29.330374500
+./.git/hooks/pre-commit.sample Size: 1649 Time: 2026-06-11 22:11:29.355435400
+./.git/hooks/pre-merge-commit.sample Size: 416 Time: 2026-06-11 22:11:29.346288600
+./.git/hooks/pre-push.sample Size: 1374 Time: 2026-06-11 22:11:29.307972600
+./.git/hooks/pre-rebase.sample Size: 4898 Time: 2026-06-11 22:11:29.328362000
+./.git/hooks/pre-receive.sample Size: 544 Time: 2026-06-11 22:11:29.404005900
+./.git/hooks/prepare-commit-msg.sample Size: 1492 Time: 2026-06-11 22:11:29.261361800
+./.git/hooks/push-to-checkout.sample Size: 2783 Time: 2026-06-11 22:11:29.385880900
+./.git/hooks/sendemail-validate.sample Size: 2308 Time: 2026-06-11 22:11:29.404005900
+./.git/hooks/update.sample Size: 3650 Time: 2026-06-11 22:11:29.294997100
+./.git/index Size: 505 Time: 2026-06-17 22:15:19.379382200
+./.git/info
+./.git/info/exclude Size: 240 Time: 2026-06-11 22:11:29.433859300
+./.git/logs
+./.git/logs/HEAD Size: 964 Time: 2026-06-17 22:15:19.568419000
+./.git/logs/refs
+./.git/logs/refs/heads
+./.git/logs/refs/heads/main Size: 964 Time: 2026-06-17 22:15:19.582956000
+./.git/logs/refs/remotes
+./.git/logs/refs/remotes/origin
+./.git/logs/refs/remotes/origin/main Size: 568 Time: 2026-06-17 22:15:27.267534900
+./.git/objects
+./.git/objects/0a
+./.git/objects/0a/97e10dc5b1d67bcf7a9cabca2e91c7522ebe4e Size: 7381 Time: 2026-06-11 22:22:29.395068100
+./.git/objects/0c
+./.git/objects/0c/b8888341337f6cad7083bfacc6a6da8e483b8e Size: 53 Time: 2026-06-16 21:29:53.995228000
+./.git/objects/0e
+./.git/objects/0e/01efce229935b570a5c2dc05e8b51050400c8d Size: 183 Time: 2026-06-16 22:20:30.960373400
+./.git/objects/10
+./.git/objects/10/01f4e9856b89ddb8479755738774d6b2b4c7ce Size: 254 Time: 2026-06-17 22:15:19.512495700
+./.git/objects/1d
+./.git/objects/1d/b8108ca0fa41771aed588a4d1319f9ed39662f Size: 16373 Time: 2026-06-16 21:29:53.941439900
+./.git/objects/24
+./.git/objects/24/c8149167a9c175b1ee46474cffcf58c8c81a28 Size: 51 Time: 2026-06-11 22:24:55.138284700
+./.git/objects/2d
+./.git/objects/2d/a308d3bb022f4586e938f9b78b05a451002b29 Size: 40 Time: 2026-06-11 22:22:29.324388300
+./.git/objects/3f
+./.git/objects/3f/c15bd993d14669d366eb73c246f59be3572340 Size: 37291 Time: 2026-06-17 22:15:19.246889100
+./.git/objects/4b
+./.git/objects/4b/825dc642cb6eb9a060e54bf8d69288fbee4904 Size: 15 Time: 2026-06-11 22:12:00.492127300
+./.git/objects/51
+./.git/objects/51/714506f9ba094b8d80b6c15efdb1cdbbda42be Size: 51 Time: 2026-06-17 22:15:19.313321900
+./.git/objects/55
+./.git/objects/55/c3151e90874b202d3985b69d9ab23c82b56136 Size: 735 Time: 2026-06-16 21:29:53.914653000
+./.git/objects/5a
+./.git/objects/5a/84f551430f52ac6ed9c228d1d21b3e24d0e91c Size: 53 Time: 2026-06-16 22:20:30.862604700
+./.git/objects/5c
+./.git/objects/5c/b0716fd81503b473af8200ca84f347eb43d796 Size: 686 Time: 2026-06-11 22:22:29.354400200
+./.git/objects/5d
+./.git/objects/5d/9fe57659b799c6c69b85385910e07c0d1a6659 Size: 50 Time: 2026-06-16 21:29:53.983898900
+./.git/objects/60
+./.git/objects/60/1386ba5191d88e3a0be29ee6f08d2a97dc3a1f Size: 53 Time: 2026-06-11 22:24:55.170393300
+./.git/objects/66
+./.git/objects/66/d0cc9419502ef21cdac42cb0d6a326d6a88132 Size: 51 Time: 2026-06-16 22:20:30.846178900
+./.git/objects/6e
+./.git/objects/6e/b7ec07791442e01e352805ee4df47fdd88db76 Size: 464 Time: 2026-06-11 22:22:29.417644300
+./.git/objects/72
+./.git/objects/72/9bc27364f452c9cb60b7528b83a9b2351f0b6a Size: 218 Time: 2026-06-16 21:29:54.094224300
+./.git/objects/73
+./.git/objects/73/bd64d5c4e68c338a8b99fd7f2bbb63dff02e8b Size: 182 Time: 2026-06-11 22:24:55.328978000
+./.git/objects/7d
+./.git/objects/7d/e826c0e8f5d41a5cb0fa1ac0485810571eaa42 Size: 177 Time: 2026-06-16 21:29:54.013357600
+./.git/objects/86
+./.git/objects/86/34b9e02a776e42d93a41fe46f658559fa80d40 Size: 178 Time: 2026-06-11 22:24:55.233243600
+./.git/objects/ad
+./.git/objects/ad/ac8521369005795df2b12ba1137940f916c22a Size: 17375 Time: 2026-06-16 22:20:30.815576700
+./.git/objects/af
+./.git/objects/af/537d008de2e760bab2328a392d18ebf4205f7c Size: 53 Time: 2026-06-17 22:15:19.343442100
+./.git/objects/bb
+./.git/objects/bb/0b62011e5ba418d0a188324a3de631db060c8c Size: 177 Time: 2026-06-16 22:20:30.886472600
+./.git/objects/d6
+./.git/objects/d6/1d19581f6f6ec44ca724a8cc41b326e8082ae6 Size: 1174 Time: 2026-06-17 22:15:19.279081400
+./.git/objects/e7
+./.git/objects/e7/a1223c866d555a2ab133f78a50424b382cda5e Size: 177 Time: 2026-06-17 22:15:19.371747800
+./.git/objects/eb
+./.git/objects/eb/963b0c751f91bac9395e9345bf52b081da9966 Size: 42 Time: 2026-06-11 22:22:29.380182900
+./.git/objects/f0
+./.git/objects/f0/364365db296387bc9a06a0f5dead6848237aad Size: 713 Time: 2026-06-16 21:29:53.961472400
+./.git/objects/f7
+./.git/objects/f7/e788dfd687484893662fe702895a0eebf39115 Size: 989 Time: 2026-06-16 22:20:30.829333000
+./.git/objects/info
+./.git/objects/pack
+./.git/refs
+./.git/refs/heads
+./.git/refs/heads/main Size: 41 Time: 2026-06-17 22:15:19.547971600
+./.git/refs/remotes
+./.git/refs/remotes/origin
+./.git/refs/remotes/origin/main Size: 41 Time: 2026-06-17 22:15:27.241707700
+./.git/refs/tags
+./.gitignore Size: 24 Time: 2026-06-11 22:22:23.473007100
+./current Size: 2890 Time: 2026-06-17 21:57:12.333519900
+./Makefile Size: 1323 Time: 2026-06-16 18:48:21.108268300
+./obj
+./obj/main.o Size: 1301912 Time: 2026-06-30 21:07:43.830839800
+./randofile Size: 20 Time: 2026-06-23 19:34:57.890718900
+./README.md Size: 26 Time: 2026-06-11 22:11:20.916804200
+./rgfdvd Size: 7 Time: 2026-06-30 21:12:36.985907400
+./src
+./src/main.cpp Size: 3039 Time: 2026-06-30 21:12:15.024506400
+./track Size: 6292 Time: 2026-06-30 21:10:22.287745500
+./tracker-version-control Size: 604232 Time: 2026-06-30 21:07:45.831940500
