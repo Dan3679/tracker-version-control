@@ -5,8 +5,12 @@
 #include <fstream>
 #include <list>
 #include <map>
+#include <chrono>
+
 
 using namespace std;
+using namespace std::chrono_literals;
+namespace fs = filesystem;
 
 /**
  * Deterministic function to convert string to int
@@ -36,12 +40,21 @@ void snapshot( const char* filename ) {
 
 	string file = "";
 
-	for (const filesystem::directory_entry& dir_entry :
-            filesystem::recursive_directory_iterator("./")) {
-	
-		file += dir_entry.path().string();
-		file += '\n';
+	for (const fs::directory_entry& dir_entry :
+            fs::recursive_directory_iterator("./")) {
+		
+		string path = dir_entry.path().string();
+		file += path;
+		if ( !fs::is_directory( path )){
+			string size = to_string( fs::file_size( path ));
+			file += " Size: " + size;
 
+			fs::file_time_type time = dir_entry.last_write_time();
+			string timeString = format("{}", time);
+			file += " Time: " + timeString;
+		}
+				
+		file += "\n";
         	if (auto l{dir_entry.path().string().length()}; entry_length < l) {
 			entry_length = l;
     
@@ -96,6 +109,12 @@ void compare( string baseFile, string compareFile ) {
 	for (const auto& file : deleted)
 		cout << "Deleted file: " << file << endl;
 }
+
+
+/**
+ * Program argument functions
+ *
+ */
 
 void init() { snapshot( "track" ); }
 
